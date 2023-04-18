@@ -6,15 +6,16 @@ Web API para la empresa N5, enfocada en el registro de permisos de usuario.
 
 1. En el archivo ChallengeWebApi\Challenge_Backend_N5_WebAPI\appsettings.json , sedebe confiogurar las siguiente variables:
   * ConnectionStrings-->cadena-conexion-n5 , Con la cadena de conexion deseada y la bd que desea crear para el sistema.
-  * kafka--> brokerUrl , Se configura con el servidor con su puerto de escucha del servicio kafka
+  * kafka--> brokerUrl , Se configura con el servidor con su puerto de escucha del servicio kafka.
   * kafka--> topic , Se configura con el nombre del topic de kafka.
   
 2. Base Datos, Se especifica que despues de generar el paso anterior se debe correr el siguiente comando "Update-Database" en la consola de Package Manager Console , con esto se genera la base de datos del API con sus respectivas tablas.
 
 
-
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 
+1. Para probar la funcionalidad recuerte primero insertar registros en la tabla TipoPermisos ya que la tabla Permisos contiene una FK con esta tabla.
+
 
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
