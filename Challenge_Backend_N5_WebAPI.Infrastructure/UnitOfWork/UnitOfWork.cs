@@ -10,7 +10,7 @@ namespace Challenge_Backend_N5_WebAPI.Infrastructure.UnitOfWork
     {
         private readonly DbContextChallengeN5 _dbContext;
         private IPermissionRepository _permissionRepository;
-
+        private IPermissionTypeRepository _permissionTypeRepository;
 
         public UnitOfWork(DbContextChallengeN5 dbContext)
         {
@@ -20,6 +20,11 @@ namespace Challenge_Backend_N5_WebAPI.Infrastructure.UnitOfWork
         public IPermissionRepository PermissionsRepository
         {
             get { return _permissionRepository = _permissionRepository ?? new PermissionRepository(_dbContext); }
+        }
+
+        public IPermissionTypeRepository PermissionsTypeRepository
+        {
+            get { return _permissionTypeRepository = _permissionTypeRepository ?? new PermissionTypeRepository(_dbContext); }
         }
 
         public void Commit()

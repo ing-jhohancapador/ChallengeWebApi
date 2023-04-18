@@ -9,7 +9,7 @@ namespace Challenge_Backend_N5_WebAPI.Domain.Aggregates
         [Required]
         [Column("Descripcion")]
         [StringLength(150)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
     }
 }

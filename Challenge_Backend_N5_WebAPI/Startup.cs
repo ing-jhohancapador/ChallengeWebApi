@@ -31,7 +31,7 @@ namespace Challenge_Backend_N5_WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            string conexion = Configuration.GetConnectionString("cadena-conexion-n5").ToString() ?? "";
+            string conexion = Configuration?.GetConnectionString("cadena-conexion-n5")?.ToString() ?? "";
             services.AddDbContext<DbContextChallengeN5>(opt => opt.UseSqlServer(conexion, x => x.MigrationsAssembly("Challenge_Backend_N5_WebAPI.Infrastructure")));
 
             services.AddControllers();
@@ -51,6 +51,7 @@ namespace Challenge_Backend_N5_WebAPI
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient<IPermissionRepository, PermissionRepository>();
+            services.AddTransient<IPermissionTypeRepository, PermissionTypeRepository>();
             services.AddSingleton(BuildMessageBus);
             services.AddSingleton<IRequestResponseBus>(svp => svp.GetService<IMessageBus>());
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();

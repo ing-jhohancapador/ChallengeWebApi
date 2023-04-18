@@ -1,7 +1,6 @@
 ﻿using Challenge_Backend_N5_WebAPI.Domain.UnitOfWork;
 using Challenge_Backend_N5_WebAPI.Domain.ValueObjects;
 using SlimMessageBus;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissions
 {

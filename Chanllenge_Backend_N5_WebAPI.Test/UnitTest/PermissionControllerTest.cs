@@ -1,7 +1,4 @@
-﻿using Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissions;
-using Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissionsById;
-
-namespace Chanllenge_Backend_N5_WebAPI.Test.UnitTest
+﻿namespace Chanllenge_Backend_N5_WebAPI.Test.UnitTest
 {
     public class PermissionControllerTest
     {

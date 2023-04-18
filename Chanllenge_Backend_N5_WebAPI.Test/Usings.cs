@@ -1,5 +1,9 @@
 global using Challenge_Backend_N5_WebAPI.Application.Commands.ModifyPermission;
 global using Challenge_Backend_N5_WebAPI.Application.Commands.RequestPermission;
+global using Challenge_Backend_N5_WebAPI.Application.Commands.RequestTypePermission;
+global using Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissions;
+global using Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissionsById;
+global using Challenge_Backend_N5_WebAPI.Application.Queries.GetPermissionType;
 global using Challenge_Backend_N5_WebAPI.Controllers;
 global using MediatR;
 global using Moq;
