@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Challenge_Backend_N5_WebAPI.Domain\Challenge_Backend_N5_WebAPI.Domain.csproj" />
+    <ProjectReference Include="..\Challenge_Backend_N5_WebAPI.Infrastructure\Challenge_Backend_N5_WebAPI.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

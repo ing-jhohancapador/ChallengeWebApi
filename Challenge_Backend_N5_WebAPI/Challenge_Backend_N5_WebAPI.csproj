@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>e262f329-dbec-4d94-9d3a-a35ef4e36348</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="SlimMessageBus.Host" Version="1.20.0" />
+    <PackageReference Include="SlimMessageBus.Host.AspNetCore" Version="1.7.3" />
+    <PackageReference Include="SlimMessageBus.Host.Kafka" Version="1.20.0" />
+    <PackageReference Include="SlimMessageBus.Host.Serialization.Json" Version="1.4.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Challenge_Backend_N5_WebAPI.Application\Challenge_Backend_N5_WebAPI.Application.csproj" />
+  </ItemGroup>
+
+</Project>
