@@ -9,7 +9,7 @@ Web API para la empresa N5, enfocada en el registro de permisos de usuario.
   * kafka--> brokerUrl , Se configura con el servidor con su puerto de escucha del servicio kafka
   * kafka--> topic , Se configura con el nombre del topic de kafka.
   
-2.Base Datos, Se especifica que despues de generar el paso anterior se debe correr el siguiente comando "Update-Database" en la consola de Package Manager Console , con esto se genera la base de datos del API con sus respectivas tablas.
+2. Base Datos, Se especifica que despues de generar el paso anterior se debe correr el siguiente comando "Update-Database" en la consola de Package Manager Console , con esto se genera la base de datos del API con sus respectivas tablas.
 
 
 
